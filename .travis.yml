@@ -1,0 +1,14 @@
+language: android
+
+deploy:
+  provider: testfairy
+  app-file: draw-me-a-fairy.apk
+  keystore-file: cert/debug.keystore
+  storepass: android
+  alias: androiddebugkey
+  metrics: "cpu,memory,logcat"
+  on:
+    all_branches: true
+  api-key:
+    "foo"
+  
