@@ -13,7 +13,8 @@ script:
   
 before_deploy:
   - gem install multipart-post
-  - find . -name "*.apk"
+  - find / -name "debug.keystore"
+  - exit 1
   
 deploy:
   provider: testfairy
