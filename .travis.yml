@@ -1,5 +1,10 @@
 language: android
 
+android:
+  components:
+    - build-tools-19.0.3
+    - android-19
+
 before_script:
   - android update project -p . -n DrawMeFairy -t android-19
   
