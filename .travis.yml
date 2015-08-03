@@ -26,5 +26,6 @@ deploy:
   on:
     all_branches: true
   api-key:
-    "foo"
+    secure: "ekgTf2C1dPR2AtMmMS8qPncDaa6bmum7VQd8LLPmDe5k2XiTgGRL1H2/arvhc17uF7VgZunTzar/hM/haVqvZuLSPHeQvLdn9bxVQe5Aapy5d1LYx7pdHaVeeGOUBMb10gpMKCFpdbtpXK2zTpPxfkoYganma1Kdk2Vmh7MGb30="
+
   
