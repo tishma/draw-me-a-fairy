@@ -13,13 +13,11 @@ script:
   
 before_deploy:
   - gem install multipart-post
-  - find / -name "debug.keystore"
-  - exit 1
-  
+
 deploy:
   provider: testfairy
   app-file: bin/DrawMeFairy-debug.apk
-  keystore-file: certs/debug.keystore
+  keystore-file: /home/travis/.android/debug.keystore
   storepass: android
   alias: androiddebugkey
   metrics: "cpu,memory,logcat"
