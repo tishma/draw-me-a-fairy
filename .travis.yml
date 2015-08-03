@@ -11,6 +11,9 @@ before_script:
 script:
   - ant debug
   
+before_deploy:
+  - gem install multipart-post
+  
 deploy:
   provider: testfairy
   app-file: draw-me-a-fairy.apk
