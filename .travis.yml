@@ -17,7 +17,7 @@ before_deploy:
   
 deploy:
   provider: testfairy
-  app-file: draw-me-a-fairy.apk
+  app-file: bin/DrawMeFairy-debug.apk
   keystore-file: certs/debug.keystore
   storepass: android
   alias: androiddebugkey
