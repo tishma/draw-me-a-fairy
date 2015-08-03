@@ -1,5 +1,8 @@
 language: android
 
+before_script:
+  - android update project -p . -n DrawMeFairy -t android-19
+  
 deploy:
   provider: testfairy
   app-file: draw-me-a-fairy.apk
