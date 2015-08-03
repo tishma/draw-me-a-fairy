@@ -13,6 +13,7 @@ script:
   
 before_deploy:
   - gem install multipart-post
+  - find . -name "*.apk"
   
 deploy:
   provider: testfairy
@@ -21,6 +22,7 @@ deploy:
   storepass: android
   alias: androiddebugkey
   metrics: "cpu,memory,logcat"
+  skip_cleanup: true
   on:
     all_branches: true
   api-key:
