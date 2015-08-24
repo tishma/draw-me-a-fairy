@@ -12,7 +12,7 @@ script:
   - ant debug
   
 before_deploy:
-  - gem install multipart-post
+  - # gem install multipart-post
 
 deploy:
   provider: testfairy
