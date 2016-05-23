@@ -10,6 +10,8 @@ import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import draw.me.fairy.R;
 
+import com.testfairy.TestFairy;
+
 /**
  * Created by gilt on 12/17/14.
  */
@@ -40,6 +42,7 @@ public class SplashScreenActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.splash_screen);
+		TestFairy.begin(this, "915d700e493b268df0be27cf8c46bb25d8986e21");
 
 		Log.d(TAG, "onCreate " + TAG);
 		ImageView image = (ImageView) findViewById(R.id.about_image);
