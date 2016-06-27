@@ -17,6 +17,8 @@ import com.testfairy.TestFairy;
  */
 public class SplashScreenActivity extends Activity {
 
+	public final static String TestFairyAppToken =  "71e9dcebfb28443106f45cc01371a95e4cace68a"; //demo2@testfairy.com
+
 	private final String TAG = getClass().getSimpleName();
 	private Animation.AnimationListener splashScreenAnimationListener = new Animation.AnimationListener() {
 		@Override
@@ -42,7 +44,7 @@ public class SplashScreenActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.splash_screen);
-		TestFairy.begin(this, "915d700e493b268df0be27cf8c46bb25d8986e21");
+		TestFairy.begin(this, SplashScreenActivity.TestFairyAppToken);
 
 		Log.d(TAG, "onCreate " + TAG);
 		ImageView image = (ImageView) findViewById(R.id.about_image);

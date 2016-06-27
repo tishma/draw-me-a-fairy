@@ -25,6 +25,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.Toast;
 import draw.me.fairy.R;
+import com.testfairy.samples.drawmefairy.SplashScreenActivity;
 import com.testfairy.TestFairy;
 
 
@@ -100,7 +101,7 @@ public class MenuActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		Log.d(TAG, "onCreate");
 		super.onCreate(savedInstanceState);
-		TestFairy.begin(this, "915d700e493b268df0be27cf8c46bb25d8986e21");
+		TestFairy.begin(this, SplashScreenActivity.TestFairyAppToken);
 
 		Log.d(TAG, "onCreate " + TAG);
 		// hide title bar
