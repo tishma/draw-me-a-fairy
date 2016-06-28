@@ -17,7 +17,7 @@ import com.testfairy.TestFairy;
  */
 public class SplashScreenActivity extends Activity {
 
-	public final static String TestFairyAppToken =  "c376c6cd6ec8c160294fb93ff7b26c8a4368e029"; //citidemo@testfairy.com
+	public final static String TestFairyAppToken =  "c8177ba73365ddc1689ac12d4e0779d777f0ed5a"; //citidemo@testfairy.com
 
 	private final String TAG = getClass().getSimpleName();
 	private Animation.AnimationListener splashScreenAnimationListener = new Animation.AnimationListener() {
